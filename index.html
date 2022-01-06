@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Compete Sports</title>
-    <style>
+       <style>
         #map {
             height:400px;
             width:400px;
         }
-    </style>
-</head>
-<body>
+        </style>
+    
+    
+  </head>
+
+  <body>
+   
     <div class="topnav">
-        <a class="active" href="#events">Events</a>
-        <a href="#calandar">Calander</a>
-        <a href="#map">Map</a>
-        <a href="#login">Login</a>
+      
+        <ul>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#events">Events</a></li>
+        </ul>
+
+      <div class="topLogin">
+        <a class="active" href="#login">Login</a>
       </div>
+    </div>
+    <main>
+        <h1>Basketball Meetup</h1>
+    </main>
+  
       <div id="map"></div>
     <script>
         function initMap(){
@@ -55,3 +70,4 @@
     ></script>
 </body>
 </html>
+
