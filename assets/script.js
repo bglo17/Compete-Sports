@@ -31,11 +31,7 @@ function initMap(){
             });
         };
     };
-
-    var markers = [
-
-    ]
-
+    
     // call the function for each location
     addMarker({
         coords:LaFitness1,
