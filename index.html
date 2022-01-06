@@ -34,40 +34,13 @@
         <h1>Basketball Meetup</h1>
     </main>
   
-      <div id="map"></div>
-    <script>
-        function initMap(){
-            // locations
-            var Atlanta = {lat:33.7490,lng:-84.3880};
-            var MallofGeorgia = {lat:34.0650,lng:-83.9842};
-
-            // map options
-            var options = {
-                zoom:8,
-                center: Atlanta,
-            }
-
-            // new map
-            var map = new google.maps.Map(document.getElementById('map'), options);
-
-            // function that adds locations to the map
-            function addMarker(coords){
-                var marker = new google.maps.Marker({
-                position: coords,
-                map:map,
-            });
-            }
-
-            // call the function for each location
-            addMarker(Atlanta);
-            addMarker(MallofGeorgia);
-
-        }
-    </script>
+    <div id="map"></div>
+    
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTFjclfAiDCli0zLlLHjPRw4jrVkwVMZc&callback=initMap&libraries=&v=weekly"
       async
     ></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
 
