@@ -55,6 +55,37 @@
               <button id = "signout_button" style ="display: none;">Sign Out</button>
               <pre id = "content" style= "white-space: prewrap;"></pre>
             </div>
+            <br>
+            <div id = "addEvent">
+              <p>Add a New Event</p>
+              <p>
+                <label>
+                  "Select a date: "
+                  <input type = "date" id = "date">
+                </label>
+              </p>
+              <p>
+                <label>"Start Time "
+                  <input type="time" id="start">
+                </label>
+                <label>"End Time"
+                  <input type="time" id="start">
+                </label>
+              </p>
+              <p>
+                <label>
+                  "Event Location: "
+                  <input type="text" id="event" size="60">
+                </label>
+              </p>
+              <p>
+                <button id="authorize-button" style>Login & Authorize</button>
+              </p>
+              <p>
+                <button id="addToCalendar" style="visibility: hidden">Add to Google Calendar</button>
+              </p>
+
+            </div>
 
 
           </div>
@@ -73,8 +104,8 @@
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
-      
-    
+    <script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.IsloGm5DHq0.O/m=client/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCNLqLj-f3R5mIaRCoBH1ZffQdA_eQ/cb=gapi.loaded_0" async=""></script>      
+    <script src="calendar_ex.js"></script>
 </body>
 </html>
 
