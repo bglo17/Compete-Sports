@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.css" />
+
     <title>Compete Sports</title>
-       <style>
+     
+        <style>
         #map {
             height:400px;
             width:400px;
-        }
-        </style>
-    
-    
+        }</style>
+
+      
+          </div>
+        </div>
+      </section>
+     
   </head>
 
   <body>
@@ -33,14 +39,42 @@
     <main>
         <h1>Basketball Meetup</h1>
     </main>
+   
   
-    <div id="map"></div>
+      <div class="container">
+        <div class = "row">
+          <div class = "col">
+            <div id="map"> </div>
+          </div>
+        
+
+        
+          <div class = "col">
+            <div id = "calendar">
+              <button id = "authorize_button" style ="display:block;">Authorize</button>
+              <button id = "signout_button" style ="display: none;">Sign Out</button>
+              <pre id = "content" style= "white-space: prewrap;"></pre>
+            </div>
+
+
+          </div>
+
+        </div>
+      
     
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTFjclfAiDCli0zLlLHjPRw4jrVkwVMZc&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
+      async></script>
+
+   
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
     <script src="./assets/script.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+      
+    
 </body>
 </html>
 
