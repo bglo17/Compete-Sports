@@ -195,10 +195,21 @@ function createEvent(eventData) {
   }
 
 // //   Biometric form
-// const form = document.getElementById('form');
-// const Username = document.getElementById('Username');
-// const Height = document.getElementById('Height');
-// const Weight = document.getElementById('Weight');
-// const BballExperience = document.getElementById('Bball Experience');
+const form = document.getElementById('form');
+const Username = document.getElementById('Username');
+const Height = document.getElementById('Height');
+const Weight = document.getElementById('Weight');
+const BballExperience = document.getElementById('Bball Experience');
 
-// form.addEventListener('submit', (e) => )
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  checkInputs ();
+});
+
+function checkInputs() {
+  // get values from the inputs
+  const usernameValue = Username.value.trim();
+  const heightValue = Height.value.trim();
+  const weightValue = Weight.value.trim();
+  const bballExperienceValue = BballExperience.value.trim(); 
+}
