@@ -40,9 +40,7 @@
         <h1>Basketball Meetup</h1>
     </main>
 
-    <div class="attendance">
-      <h3>Number of Attendees</h3>
-    </div>
+
    
   
       <div class="container">
@@ -50,6 +48,9 @@
           <div class = "col">
             <div id="map"> </div>
           </div>
+
+
+=======
         
   <!-- Biometrics Form -->
   <div class="container"></div>
@@ -81,6 +82,7 @@
   </div>
   
         
+
           <div class = "col">
             <div id = "calendar">
               <button id = "authorize_button" style ="display:block;">Authorize</button>
@@ -107,7 +109,19 @@
               <p>
                 <label>
                   "Event Location: "
-                  <input type="text" id="event" size="60">
+                  <div class = "dropdown" color:>
+                    <button class="btn btn-info dropdown-toggle" type="button" id="location" data-toggle="dropdown">Address
+                    
+                    <span class="caret"></span>
+  
+                    </button>
+                      <ul class="dropdown-menu" aria-labelledby="location">
+                        <li><a href ="#">1185 Ernest W Barrett Pkwy NW, Kennesaw, GA. 30144</a></li>
+                        <li><a href ="#">1045 Woodstock Rd., Roswell, GA. 30075</a></li>
+                        <li><a href ="#">1544 Piedmont Ave NE Ste. 115, Atlanta, GA. 30324</a></li>
+                        <li><a href ="#">3020 Chapel Hill Rd., Douglasville, GA. 30135</a></li>
+                      </ul>
+                  </div>
                 </label>
               </p>
               <p>
@@ -116,18 +130,31 @@
               <p>
                 <button id="addToCalendar" style="visibility: hidden">Add to Google Calendar</button>
               </p>
-
+                
             </div>
 
 
           </div>
 
         </div>
-      
-  
+
+      </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="attendance">
+          <h3>Number of Attendees</h3>
+        </div>
 
 
 
+      </div>
+    </div>
+
+
+  </div>
+    
+    
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTFjclfAiDCli0zLlLHjPRw4jrVkwVMZc&callback=initMap&libraries=&v=weekly"
       async></script>
