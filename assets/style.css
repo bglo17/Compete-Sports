@@ -66,17 +66,30 @@ main h1 {
 
 .attendance {
   height: 400px;
-<<<<<<< HEAD
+
   width: auto;
   background-color: lightgrey;
   padding: 2px;
+  text-align: center;
+  text-decoration: underline;
+ }
+ #map {
+  height: 400px;
+  width: auto;
+ }
 =======
+
+  width: auto;
+  background-color: lightgrey;
+  padding: 2px;
+
   overflow: hidden;
   text-decoration: underline;
->>>>>>> 663a2fb17f72fbe6d95038281c1973a895558a0b
+
   text-align: center;
   text-decoration: underline;
 }
+
 
 #map {
   height: 400px;
@@ -96,9 +109,13 @@ p {
   width: 400px;
   height: 400px;
   max-width: 100%;
+
+  
+
   margin: auto;
   padding: 5px;
   flex-wrap: wrap;
+
   
  }
 
