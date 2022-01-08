@@ -193,3 +193,12 @@ function createEvent(eventData) {
       alert("Your event was added to the calendar.");
     });
   }
+
+// //   Biometric form
+// const form = document.getElementById('form');
+// const Username = document.getElementById('Username');
+// const Height = document.getElementById('Height');
+// const Weight = document.getElementById('Weight');
+// const BballExperience = document.getElementById('Bball Experience');
+
+// form.addEventListener('submit', (e) => )
