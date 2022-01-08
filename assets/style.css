@@ -64,30 +64,15 @@ main h1 {
   text-align: center;
   text-decoration: underline;
  }
-<<<<<<< Updated upstream
  #map {
   height: 400px;
   width: auto;
  }
-=======
-
-
-
-#map {
-  height: 400px;
-  width: auto;
-}
-
->>>>>>> Stashed changes
 
 
 p {
   color: #04aa6d;
-<<<<<<< Updated upstream
-=======
-=======
 }
->>>>>>> Stashed changes
 /* Biometrics form */
 .container {
   text-align: center;
