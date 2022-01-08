@@ -64,6 +64,62 @@ main h1 {
   padding: 5px;
   width: 350px;
   height: 400px;
+  overflow: hidden;
   text-decoration: underline;
   text-align: center;
+}
+
+/* Biometrics form */
+.container {
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  padding: 5px;
+  
+ }
+
+.header {
+  background-color:rgb(168, 54, 54) ;
+  border-bottom: 1px solid;
+  padding: 20px 40px;
+  }
+
+  .header h2 {
+    margin: 0;
+  }
+
+  .form {
+    padding: 50px 50px;
+  } 
+
+  .form-control {
+    margin-bottom: 10px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+   .form-control label {
+     display: inline-block;
+     margin-bottom: 10px;
+   }
+   
+
+   .form-control input {
+     border: 2px solid gray;
+     border-radius: 4px;
+     display: block;
+     width: 100%;
+     padding: 10px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 14px;
+   }
+.form button {
+  background-color: rgb(247, 16, 16);
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  
 }
