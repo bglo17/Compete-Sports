@@ -98,4 +98,17 @@ main h1 {
     padding-bottom: 20px;
     position: relative;
   }
-  
+   .form-control label {
+     display: inline-block;
+     margin-bottom: 5px;
+   }
+
+   .form-control input {
+     border: 2px solid gray;
+     border-radius: 4px;
+     display: block;
+     width: 100%;
+     padding: 10px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 14px;
+   }
