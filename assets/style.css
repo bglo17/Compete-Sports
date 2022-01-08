@@ -67,3 +67,7 @@ main h1 {
   text-decoration: underline;
   text-align: center;
 }
+
+p {
+  color: #04aa6d;
+}
