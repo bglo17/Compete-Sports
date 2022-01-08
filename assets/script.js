@@ -194,7 +194,9 @@ function createEvent(eventData) {
     });
   }
 
+
 // //   Biometric form
+ feature/branch-three
 const form = document.getElementById('form');
 const Username = document.getElementById('Username');
 const Height = document.getElementById('Height');
@@ -213,3 +215,19 @@ function checkInputs() {
   const weightValue = Weight.value.trim();
   const bballExperienceValue = BballExperience.value.trim(); 
 }
+
+// const form = document.getElementById('form');
+// const Username = document.getElementById('Username');
+// const Height = document.getElementById('Height');
+// const Weight = document.getElementById('Weight');
+// const BballExperience = document.getElementById('Bball Experience');
+
+// form.addEventListener('submit', (e) => )
+
+  // dropdown locations
+  var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+  return new bootstrap.Dropdown(dropdownToggleEl)
+})
+
+ main
