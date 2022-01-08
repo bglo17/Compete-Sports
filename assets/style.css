@@ -67,3 +67,16 @@ main h1 {
   text-decoration: underline;
   text-align: center;
 }
+.container {
+  background-color: orange;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
+  width: 400px;
+  max-width: 100%;
+}
+
+.header {
+  background-color:rgb(168, 54, 54) ;
+  border-bottom: 1px solid;
+  padding: 20px 40px;
+}
