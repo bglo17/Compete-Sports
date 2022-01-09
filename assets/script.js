@@ -203,7 +203,6 @@ function createEvent(eventData) {
 // const BballExperience = document.getElementById('Bball Experience');
 
 // form.addEventListener('submit', (e) => )
-=======
   // dropdown locations
   var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
 var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
