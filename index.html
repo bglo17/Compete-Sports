@@ -1,114 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./assets/style.css" />
 
-    <title>Compete Sports</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  </head>
+  <link rel="stylesheet" href="./assets/style.css" />
 
-  <body>
-    <div class="topnav">
-      <ul>
-        <li><a href="#calendar">Calendar</a></li>
-        <li><a href="#map">Map</a></li>
-        <li><a href="#events">Events</a></li>
-      </ul>
+  <title>Compete Sports</title>
 
-      <div class="topLogin">
-        <a class="active" href="#login">Login</a>
+</head>
+
+<body>
+  <div class="topnav">
+    <ul>
+      <li><a href="#calendar">Calendar</a></li>
+      <li><a href="#map">Map</a></li>
+      <li><a href="#events">Events</a></li>
+    </ul>
+
+    <div class="topLogin">
+      <a class="active" href="#login">Login</a>
+    </div>
+  </div>
+  <main>
+    <h1>Basketball Meetup</h1>
+  </main>
+
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="map"></div>
+      </div>
+
+
+
+
+      <div class="col">
+        <div id="calendar">
+          <button id="authorize_button" style="display:block;">Authorize</button>
+          <button id="signout_button" style="display: none;">Sign Out</button>
+          <pre id="content" style="white-space: prewrap;"></pre>
+        </div>
+        <br/>
+        <div id="addEvent">
+          <p>Add a New Event</p>
+          <p>
+            <label>
+              "Select a date: "
+              <input type="date" id="date">
+            </label>
+          </p>
+          <p>
+            <label>"Start Time "
+              <input type="time" id="start">
+            </label>
+            <label>"End Time"
+              <input type="time" id="start">
+            </label>
+          </p>
+          <p>
+            <label>
+              "Event Location: "
+
+            </label>
+          <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="location" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Address
+              <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="location">
+              <a class="dropdown-item" href="#">1185 Ernest W Barrett Pkwy NW, Kennesaw, GA. 30144</a>
+              <a class="dropdown-item" href="#">1045 Woodstock Rd., Roswell, GA. 30075</a>
+              <a class="dropdown-item" href="#">1544 Piedmont Ave NE Ste. 115, Atlanta, GA. 30324</a>
+              <a class="dropdown-item" href="#">3020 Chapel Hill Rd., Douglasville, GA. 30135</a>
+            </div>
+
+
+
+
+
+          </div>
+          </p>
+          <p>
+            <button id="authorize-button" style>Login & Authorize</button>
+          </p>
+          <p>
+            <button id="addToCalendar" style="visibility: hidden">Add to Google Calendar</button>
+          </p>
+
+
+        </div>
+        
       </div>
     </div>
-    <main>
-      <h1>Basketball Meetup</h1>
-    </main>
-
-
- 
-    
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div id="map"></div>
-        </div>
-  
-        
-          
-
-          <div class = "col">
-            <div id = "calendar">
-              <button id = "authorize_button" style ="display:block;">Authorize</button>
-              <button id = "signout_button" style ="display: none;">Sign Out</button>
-              <pre id = "content" style= "white-space: prewrap;"></pre>
-            </div>
-            <br>
-            <div id = "addEvent">
-              <p>Add a New Event</p>
-              <p>
-                <label>
-                  "Select a date: "
-                  <input type = "date" id = "date">
-                </label>
-              </p>
-              <p>
-                <label>"Start Time "
-                  <input type="time" id="start">
-                </label>
-                <label>"End Time"
-                  <input type="time" id="start">
-                </label>
-              </p>
-              <p>
-                <label>
-                  "Event Location: "
-                  <div class = "dropdown" >
-                    <button class="btn btn-info dropdown-toggle" type="button" id="location" data-toggle="dropdown"> 
-                      Address
-                      <span class="caret"></span>
-                    </button>
-                      <ul class="dropdown-options" aria-labelled-by="location">
-                        <li><a href ="#">1185 Ernest W Barrett Pkwy NW, Kennesaw, GA. 30144</a></li>
-                        <li><a href ="#">1045 Woodstock Rd., Roswell, GA. 30075</a></li>
-                        <li><a href ="#">1544 Piedmont Ave NE Ste. 115, Atlanta, GA. 30324</a></li>
-                        <li><a href ="#">3020 Chapel Hill Rd., Douglasville, GA. 30135</a></li>
-                      </ul>
-                    
-                    
-  
-                    
-                   
-                  </div>
-                </label>
-              </p>
-              <p>
-                <button id="authorize-button" style>Login & Authorize</button>
-              </p>
-              <p>
-                <button id="addToCalendar" style="visibility: hidden">Add to Google Calendar</button>
-              </p>
-
-                
-            </div>
-
-          <br />
-            </p>
-          </div>
-        </div>
-
-
-
-
-
-
-      </div>
+  </div>
 
 
 
@@ -118,75 +109,78 @@
   <!-- Biometrics Form -->
   <div class="container">
     <div class="row">
-        <div class="col">
-          <div class="attendance">
-              <h3>Number of Attendees</h3>
-          </div>
-    
-    
-    
+      <div class="col">
+        <div class="attendance">
+          <h3>Number of Attendees</h3>
         </div>
-    
-    
-    
-      
 
-          
-  <div class ="col">
-    <div class="header">
-      <h2> Input Biometrics</h2>
+
+
+      </div>
+
+
+
+
+
+
+      <div class="col">
+        <div class="header">
+          <h2> Input Biometrics</h2>
+        </div>
+        <form class="form" id="form">
+          <div class="form-control">
+            <label>Username</label>
+            <input type="text" placeholder="Type your login info" id="username">
+          </div>
+
+          <div class="form-control">
+            <label>Height</label>
+            <input type="text" placeholder="List your height" id="Height">
+          </div>
+          <div class="form-control">
+            <label>Weight</label>
+            <input type="text" placeholder="List your weight" id="Weight">
+          </div>
+          <div class="form-control">
+            <label>Bball Experience</label>
+            <input type="text" placeholder="List your Bball experience" id="Basketball Experience">
+          </div>
+
+          <button>Submit</button>
+        </form>
+      </div>
     </div>
-      <form class="form" id="form">
-    <div class="form-control">
-      <label>Username</label>
-      <input type="text" 
-      placeholder="Type your login info" id="username">
-    </div>
-  
-      <div class="form-control">
-      <label>Height</label>
-      <input type="text" placeholder="List your height" id="Height">
-    </div>
-    <div class="form-control">
-      <label>Weight</label>
-      <input type="text" placeholder="List your weight" id="Weight">
-    </div>
-    <div class="form-control">
-      <label>Bball Experience</label>
-      <input type="text" placeholder="List your Bball experience" id="Basketball Experience">
-    </div>
-  
-  <button>Submit</button>
-  </form>
   </div>
-  </div>
-  </div>
 
 
 
+
+
+
+
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTFjclfAiDCli0zLlLHjPRw4jrVkwVMZc&callback=initMap&libraries=&v=weekly"
+    async></script>
+
+  <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+  <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+    onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+  <script
+    src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.IsloGm5DHq0.O/m=client/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCNLqLj-f3R5mIaRCoBH1ZffQdA_eQ/cb=gapi.loaded_0"
+    async="">
+    </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="calendar_ex.js"></script>
   
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
+  <script src="./assets/script.js"></script>
+</body>
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTFjclfAiDCli0zLlLHjPRw4jrVkwVMZc&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
-
-    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-    <script src="./assets/script.js"></script>
-    <script
-      async
-      defer
-      src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()"
-    ></script>
-    <script
-      src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.IsloGm5DHq0.O/m=client/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCNLqLj-f3R5mIaRCoBH1ZffQdA_eQ/cb=gapi.loaded_0"
-      async=""
-    ></script>
-    <script src="calendar_ex.js"></script>
-  </body>
 </html>
