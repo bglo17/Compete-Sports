@@ -46,11 +46,11 @@ body {
 .topLogin {
   margin-left: auto;
 }
-main {
+header {
   width: 90%;
   margin: auto;
 }
-main h1 {
+header h1 {
   text-align: center;
   color: white;
   padding: 30px;
