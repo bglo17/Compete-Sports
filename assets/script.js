@@ -196,25 +196,73 @@ function createEvent(eventData) {
 
 
 // //   Biometric form
- feature/branch-three
-const form = document.getElementById('form');
-const Username = document.getElementById('Username');
-const Height = document.getElementById('Height');
-const Weight = document.getElementById('Weight');
-const BballExperience = document.getElementById('Bball Experience');
+var usernameInput = document.querySelector("#username");
+var heightInput = document.querySelector("#height");
+var weightInput= document.querySelector("#weight");
+var bballExperienceInput = document.querySelector("#bballExperience");
+var submitButton = document.querySelector("#submit");
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  checkInputs ();
-});
 
-function checkInputs() {
-  // get values from the inputs
-  const usernameValue = Username.value.trim();
-  const heightValue = Height.value.trim();
-  const weightValue = Weight.value.trim();
-  const bballExperienceValue = BballExperience.value.trim(); 
+renderLastRegistered();
+// Retrieve the last username,height,weight, and bball experience to the page
+function didplayMessage(_type, _message){
+  msgDiv.textContent = message;
+  msgDiv.setAttribute("class", type);
 }
+ 
+var username = document.querySelector('#username').value;
+var height = document.querySelector('#height').value; 
+var weight = document.querySelector('#weight').value;
+var bballExperience = document.querySelector('#bballExperience').value;
+
+if (username === '') {
+  displayMessage('error', 'Email cannot be blank');
+  } else if (height === '') {
+    displayMessage('error', 'Height cannot be blank');
+  } else if (weight === '') {
+    displayMessage('error', 'Weight cannot be blank');
+  } else if (bballExperience === ''){
+    displayMessage('error', 'BballExperience cannot be blank')
+  } else {
+    displayMessage('success', 'Registered successfully')
+  }
+
+function renderLastRegistered(){
+  var usernameData = localStorage.getItem('username');
+  var heightData = localstorage.getItem('height');
+  var weightData = localstorage.getItem('weight')
+  var bballExperienceData = (localstorage('bballexperience')
+  )}
+
+  
+localStorage.setItem('username', username );
+localStorage.setItem('height', height);
+localStorage.setItem('weight', weight);
+localStorage.setItem('bballExperience', BballExperience)
+
+submitButton.addEventListener('click', function (event) {
+  event.preventDefault();
+})
+  
+// // local storage
+// var form = document.getElementById('form');
+// var Username = document.getElementById('Username');
+// var Height = document.getElementById('Height');
+// var Weight = document.getElementById('Weight');
+// var BballExperience = document.getElementById('Bball Experience');
+
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   checkInputs ();
+// });
+
+// function checkInputs() {
+//   // get values from the inputs
+//   const usernameValue = Username.value.trim();
+//   const heightValue = Height.value.trim();
+//   const weightValue = Weight.value.trim();
+//   const bballExperienceValue = BballExperience.value.trim(); 
+// }
 
 // const form = document.getElementById('form');
 // const Username = document.getElementById('Username');
