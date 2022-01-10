@@ -196,12 +196,20 @@ function createEvent(eventData) {
 
 
 // //   Biometric form
-var usernameInput = document.querySelector("#email");
-var heightInput = document.querySelector("#email");
-var weightInput= document.querySelector("#email");
+var usernameInput = document.querySelector("#username");
+var heightInput = document.querySelector("#height");
+var weightInput= document.querySelector("#weight");
+var bballExperienceInput = document.querySelector("#bballExperience");
+var submitButton = document.querySelector("#submit");
 
-
-
+renderLastRegistered();
+// Retrieve the last username,height,weight, and bball experience to the page
+function renderLastRegistered(){
+  var usernameData = localstorage.getItem('username')
+  var heightData = localstorage.getItem('height')
+  var weightData = localstorage.getItem('weight')
+  var bballExperienceData = localstorage('bballexperience')
+}
 
  feature/branch-three
 const form = document.getElementById('form');
