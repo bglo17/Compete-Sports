@@ -210,6 +210,23 @@ function didplayMessage(_type, _message){
   msgDiv.setAttribute("class", type);
 }
  
+var username = document.querySelector('#username').value;
+var height = document.querySelector('#height').value; 
+var weight = document.querySelector('#weight').value;
+var bballExperience = document.querySelector('#bballExperience').value;
+
+if (username === '') {
+  displayMessage('error', 'Email cannot be blank');
+  } else if (height === '') {
+    displayMessage('error', 'Height cannot be blank');
+  } else if (weight === '') {
+    displayMessage('error', 'Weight cannot be blank');
+  } else if (bballExperience === ''){
+    displayMessage('error', 'BballExperience cannot be blank')
+  } else {
+    displayMessage('success', 'Registered successfully')
+  }
+
 function renderLastRegistered(){
   var usernameData = localStorage.getItem('username');
   var heightData = localstorage.getItem('height');
