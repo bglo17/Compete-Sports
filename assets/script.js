@@ -202,34 +202,48 @@ var weightInput= document.querySelector("#weight");
 var bballExperienceInput = document.querySelector("#bballExperience");
 var submitButton = document.querySelector("#submit");
 
+
 renderLastRegistered();
 // Retrieve the last username,height,weight, and bball experience to the page
+function didplayMessage(_type, _message){
+  msgDiv.textContent = message;
+  msgDiv.setAttribute("class", type);
+}
+ 
 function renderLastRegistered(){
-  var usernameData = localstorage.getItem('username')
-  var heightData = localstorage.getItem('height')
+  var usernameData = localStorage.getItem('username');
+  var heightData = localstorage.getItem('height');
   var weightData = localstorage.getItem('weight')
-  var bballExperienceData = localstorage('bballexperience')
-}
+  var bballExperienceData = (localstorage('bballexperience')
+  )}
 
- feature/branch-three
-const form = document.getElementById('form');
-const Username = document.getElementById('Username');
-const Height = document.getElementById('Height');
-const Weight = document.getElementById('Weight');
-const BballExperience = document.getElementById('Bball Experience');
+  
+localStorage.setItem('username', username );
+localStorage.setItem('height', height);
+localStorage.setItem('weight', weight);
+localStorage.setItem('bballExperience', BballExperience)
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  checkInputs ();
-});
 
-function checkInputs() {
-  // get values from the inputs
-  const usernameValue = Username.value.trim();
-  const heightValue = Height.value.trim();
-  const weightValue = Weight.value.trim();
-  const bballExperienceValue = BballExperience.value.trim(); 
-}
+  
+// // local storage
+// var form = document.getElementById('form');
+// var Username = document.getElementById('Username');
+// var Height = document.getElementById('Height');
+// var Weight = document.getElementById('Weight');
+// var BballExperience = document.getElementById('Bball Experience');
+
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   checkInputs ();
+// });
+
+// function checkInputs() {
+//   // get values from the inputs
+//   const usernameValue = Username.value.trim();
+//   const heightValue = Height.value.trim();
+//   const weightValue = Weight.value.trim();
+//   const bballExperienceValue = BballExperience.value.trim(); 
+// }
 
 // const form = document.getElementById('form');
 // const Username = document.getElementById('Username');
