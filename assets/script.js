@@ -240,7 +240,9 @@ localStorage.setItem('height', height);
 localStorage.setItem('weight', weight);
 localStorage.setItem('bballExperience', BballExperience)
 
-
+submitButton.addEventListener('click', function (event) {
+  event.preventDefault();
+})
   
 // // local storage
 // var form = document.getElementById('form');
