@@ -196,6 +196,13 @@ function createEvent(eventData) {
 
 
 // //   Biometric form
+var usernameInput = document.querySelector("#email");
+var heightInput = document.querySelector("#email");
+var weightInput= document.querySelector("#email");
+
+
+
+
  feature/branch-three
 const form = document.getElementById('form');
 const Username = document.getElementById('Username');
